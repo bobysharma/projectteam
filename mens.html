@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .main{
+        border: 0px solid red;
+        width : 60%;
+        height: 340px;
+        margin: auto;
+        margin-top: 50px;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 340px;
+        gap: 90px;  
+     }
+     .main>div{
+        border:0px solid green;
+        
+     }
+     .main>div>div:nth-child(1){
+        border: 0px solid black;
+        width: 100%;
+        height: 60%;
+
+     }
+     .main>div>div:nth-child(2){
+        border: 0px solid blue;
+        width: 100%;
+        height: 40%;
+        line-height: 10px;
+         
+
+     }
+     .main>div>div:nth-child(2)>div{
+       border: 0px solid red;
+       height: 40px;
+       display: flex;   
+       gap: 20px;  
+       margin-top: -10px;
+
+         
+
+     }
+     .main>div>div:nth-child(2)>div>div:nth-child(2){
+       color:green;
+          
+         
+
+     }
+        div>img{
+            
+            height: 100%;
+            margin-left: 60px;
+        }
+        div>p:nth-child(1)
+        {
+            font-weight: bold;
+        }
+        P+P{
+            color:grey; 
+            font-size: 20px;
+        }
+        p{
+            font-size: 20px;
+        }
+     
+
+
+    </style>
+</head>
+<body>
+        <div class="main">
+            <div>
+            <div>
+                <img src="https://m.media-amazon.com/images/I/71V4RsIUADL._AC_UL320_.jpg">
+            </div>
+            <div>
+               <p>Pause</p> 
+               <p>Men Cotton Half Sleeve T-shirt</p>
+               <div>
+               <div><p>₹ 359</p></div><div><p>-76%</p></div>
+            </div>
+            </div>
+            </div>
+            <div>
+                <div>
+                    <img src="https://m.media-amazon.com/images/I/41fk0IKx3tL._UY500_.jpg">
+                </div>
+                <div>
+                   <p>JUBINATION</p> 
+                   <p>Men Wol Sleeveless Sweater</p>
+                   <div>
+                   <div><p>₹ 799</p></div><div><p>-47%</p></div>
+                </div>
+                </div>
+
+            </div>
+
+        </div>
+</body>
+</html>
